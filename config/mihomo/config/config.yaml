@@ -2,10 +2,10 @@
 # 此配置不防DNS泄露，想使用防泄漏专业版本请使用同目录下另一个名字为mihomo的版本
 # 机场订阅
 proxy-providers:
-  Airport1:
-    url: "订阅url"
+  SSRDOG:
+    url: "https://2e2e94699d3d48fbbfb511b36eaf4d75.z7pm-k4ra-9vqd-xc3t-bl6s.sbs/s?q=f7a3571a&t=2e2e94699d3d48fbbfb511b36eaf4d75.jpg&flag=clash&route=1"
     type: http
-    interval: 0
+    interval: 86400
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
