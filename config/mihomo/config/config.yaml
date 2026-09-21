@@ -11,6 +11,13 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
+    header:
+      User-Agent:
+      - "Clash"
+      - "mihomo"
+      - "Clash.meta"
+
+# global-ua: clash.meta
 
 # 节点信息
 proxies:
