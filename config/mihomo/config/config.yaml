@@ -24,7 +24,6 @@ proxies:
   - {name: 直连, type: direct}
 
 # 全局配置 
-mixed-port: 7890
 allow-lan: true
 bind-address: "*"
 ipv6: false
