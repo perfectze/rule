@@ -3,7 +3,7 @@
 # 机场订阅
 proxy-providers:
   SSRDOG:
-    url: "https://2e2e94699d3d48fbbfb511b36eaf4d75.z7pm-k4ra-9vqd-xc3t-bl6s.sbs/s?q=f7a3571a&t=2e2e94699d3d48fbbfb511b36eaf4d75.jpg&flag=clash&route=1"
+    url: "https://2e2e94699d3d48fbbfb511b36eaf4d75.z7pm-k4ra-9vqd-xc3t-bl6s.sbs/s?q=e096b290&t=2e2e94699d3d48fbbfb511b36eaf4d75.jpg&flag=clash&route=1"
     type: http
     interval: 86400
     health-check:
