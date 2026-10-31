@@ -120,6 +120,11 @@ proxy-groups:
 # 规则匹配
 rules:
   - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
+  - DOMAIN-SUFFIX,checkip.synology.com,DIRECT
+  - DOMAIN-SUFFIX,checkipv6.synology.com,DIRECT
+  - DOMAIN-SUFFIX,checkport.synology.com,DIRECT
+  - DOMAIN-SUFFIX,ddns.synology.com,DIRECT
+  - DOMAIN-SUFFIX,account.synology.com,DIRECT
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,private_domain,直连
   - RULE-SET,ai_domain,🤖 AI
