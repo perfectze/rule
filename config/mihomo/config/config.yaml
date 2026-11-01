@@ -120,6 +120,14 @@ proxy-groups:
 # 规则匹配
 rules:
   - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
+  # 1. 家里内网网段，全部直连，不经过代理
+  - IP-CIDR,192.168.2.0/24,DIRECT,no-resolve
+  # 2. WireGuard 虚拟网段，全部直连
+  - IP-CIDR,10.0.0.0/24,DIRECT,no-resolve
+  # 3. WireGuard 51820 UDP端口，精准排除VPN流量（目的端口）
+  - DST-PORT,51820,DIRECT,udp
+  # 4. WireGuard 51820 UDP端口，源端口也直连（回包流量）
+  - SRC-PORT,51820,DIRECT,udp
   - DOMAIN-SUFFIX,checkip.synology.com,DIRECT
   - DOMAIN-SUFFIX,checkipv6.synology.com,DIRECT
   - DOMAIN-SUFFIX,checkport.synology.com,DIRECT
